@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.style-changers {
+  position: fixed;
+  right: 0;
+  background: red;
+  width: 20%;
+  height: 5%;
+}
+/*# sourceMappingURL=style.css.map */
