@@ -1,6 +1,8 @@
 body{
     margin: 0;
     height: 100vh;
+    display: flex;
+    font-family: 'Amatic SC', cursive;
 }
 
 .style-changers{
@@ -10,3 +12,26 @@ body{
     width: 20%;
     height: 5%;
 }
+
+.not-ready{
+    font-size: 8em;
+    margin: auto;
+}
+
+.logo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 3em;
+}
+
+.logo-section{
+    border-radius: 40%;
+    transition: all 2s ease-in-out;
+}
+
+// .logo-section:hover{
+//     // border: 20em solid red;
+//     background: red;
+//     border-radius: 50%;
+// }
