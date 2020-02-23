@@ -1,0 +1,35 @@
+$colors: (#f79256,#fbd1a2,#7dcfb6,#00b2ca,#1d4e89);
+
+
+html{
+    
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.logo-section{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+@each $color in $colors {
+    $i: index($colors, $color);
+    .logo-section:nth-of-type(#{$i}) {
+      background-color: $color;
+    }
+  }
+  
+
+h1{
+    font-size: 3em;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}

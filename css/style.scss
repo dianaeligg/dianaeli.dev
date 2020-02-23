@@ -16,6 +16,7 @@ body{
 .not-ready{
     font-size: 8em;
     margin: auto;
+    height: calc(100vh - 300px);
 }
 
 .logo{
@@ -24,11 +25,29 @@ body{
     bottom: 10px;
     font-size: 3em;
 }
-
 .logo-section{
     border-radius: 40%;
     transition: all 2s ease-in-out;
 }
+
+
+.email{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+    border-bottom: 8px solid#1d4e89;
+}
+
 
 // .logo-section:hover{
 //     // border: 20em solid red;
