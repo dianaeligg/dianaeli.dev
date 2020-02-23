@@ -4,7 +4,7 @@
   font-size: 24px;
 }
 
-.logo-section {
+.category-section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -12,23 +12,23 @@
   border-radius: 50%;
 }
 
-.logo-section:nth-of-type(1) {
+.category-section:nth-of-type(1) {
   background-color: #f79256;
 }
 
-.logo-section:nth-of-type(2) {
+.category-section:nth-of-type(2) {
   background-color: #fbd1a2;
 }
 
-.logo-section:nth-of-type(3) {
+.category-section:nth-of-type(3) {
   background-color: #7dcfb6;
 }
 
-.logo-section:nth-of-type(4) {
+.category-section:nth-of-type(4) {
   background-color: #00b2ca;
 }
 
-.logo-section:nth-of-type(5) {
+.category-section:nth-of-type(5) {
   background-color: #1d4e89;
 }
 
