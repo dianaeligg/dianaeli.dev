@@ -41,6 +41,21 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding-left: 1em;
+  }
+  .container .sections .section {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .container .sections .section {
+    width: 100%;
+  }
+}
+
 .section:nth-of-type(1) .category-header {
   background-color: #f79256;
   color: #141414;
