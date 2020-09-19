@@ -4,7 +4,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
+  background-color: #fbfbf8;
+  color: #141414;
 }
 
 .style-changers {
