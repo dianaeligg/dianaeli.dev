@@ -35,6 +35,27 @@ $font-colors: ($off-black, $off-black, $off-white, $off-black, $off-black);
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding-left: 1em;
+    .sections {
+      .section {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .container {
+    .sections {
+      .section {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @each $color in $background-colors {
   $i: index($background-colors, $color);
   // $j: index($font-colors, $font-color);
