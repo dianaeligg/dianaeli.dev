@@ -1,35 +1,47 @@
-$colors: (#f79256,#fbd1a2,#7dcfb6,#00b2ca,#1d4e89);
+$off-black: #141414;
+$off-white: #fbfbf8;
 
+$background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
+$font-colors: ($off-black, $off-black, $off-white, $off-black, $off-black);
 
-html{
-    
-}
-
-.container{
-    width: 960px;
-    margin: 0 auto;
-    font-size: 24px;
-}
-
-.category-section{
-    width: fit-content;
-    padding: 8px;
-    border-radius: 50%;
-}
-
-@each $color in $colors {
-    $i: index($colors, $color);
-    .category-section:nth-of-type(#{$i}) {
-      background-color: $color;
+.container {
+  width: 960px;
+  margin: 0 auto;
+  font-size: 24px;
+  color: $off-black;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-block-end: 0;
+  }
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    .section {
+      width: 33%;
+      .category-header {
+        width: fit-content;
+        padding: 10px 12px;
+        border-radius: 50%;
+        text-align: center;
+        width: 150px;
+        box-shadow: 2px 2px grey;
+      }
+      .list-item {
+        list-style: none;
+        font-weight: bold;
+      }
     }
   }
-  
-
-h1{
-    font-size: 3em;
 }
 
-li{
-    list-style: none;
-    font-weight: bold;
+@each $color in $background-colors {
+  $i: index($background-colors, $color);
+  // $j: index($font-colors, $font-color);
+  .section:nth-of-type(#{$i}) {
+    .category-header {
+      background-color: $color;
+      color: nth($font-colors, $i);
+    }
+  }
 }
