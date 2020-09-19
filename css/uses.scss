@@ -35,6 +35,15 @@ $font-colors: ($off-black, $off-black, $off-white, $off-black, $off-black);
   }
 }
 
+a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 8px solid#1d4e89;
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     padding-left: 1em;

@@ -1,3 +1,41 @@
-body{
-    background: palevioletred;
+$off-black: #141414;
+
+$background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
+
+.container {
+  padding: 24px;
+  font-size: 36px;
+  margin: 0 auto;
+  .not-ready {
+    font-size: 96px;
+    margin: 36px auto;
+  }
+  .subtitle {
+    font-size: 56px;
+    margin-bottom: 0.5em;
+  }
+  .links-list {
+    display: flex;
+    flex-direction: column;
+    .link-item {
+      color: $off-black;
+      padding-left: 12px;
+      transition: all 0.3s ease-in-out;
+      margin: 6px 0;
+    }
+  }
+}
+
+@each $color in $background-colors {
+  $i: index($background-colors, $color);
+  .container {
+    .links-list {
+      .link-item:nth-of-type(#{$i}) {
+        border-left: 2px $color solid;
+        &:hover {
+          border-left-width: 8px;
+        }
+      }
+    }
+  }
 }
