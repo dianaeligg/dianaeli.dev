@@ -41,6 +41,16 @@
   font-weight: bold;
 }
 
+a {
+  color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 8px solid #1d4e89;
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     padding-left: 1em;
