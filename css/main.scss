@@ -26,8 +26,57 @@ $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
   }
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .social-link-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.narrow-logo {
+  display: none;
+  .narrow-logo-text {
+    font-size: 76px;
+    text-align: center;
+    border-bottom: 5px solid nth($background-colors, 5);
+    margin-bottom: 5px;
+  }
+  .narrow-links {
+    display: flex;
+    justify-content: center;
+    .social-link-logo {
+      margin: 5px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .container {
+    .not-ready {
+      text-align: center;
+    }
+  }
+  .logo {
+    display: none;
+  }
+  .narrow-logo {
+    display: block;
+  }
+}
+
 @each $color in $background-colors {
   $i: index($background-colors, $color);
+  svg:nth-of-type(#{$i}) {
+    cursor: pointer;
+    &:hover {
+      fill: $color;
+    }
+  }
   .container {
     .links-list {
       .link-item:nth-of-type(#{$i}) {

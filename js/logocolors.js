@@ -9,7 +9,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 function changeTheme() {
   let section = scs[Math.floor(Math.random() * scs.length)];
-  console.log(section);
   const bgColorIndex = Math.floor(Math.random() * colors.length);
   section.style.background = colors[bgColorIndex];
   if (bgColorIndex === 4) {

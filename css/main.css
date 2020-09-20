@@ -32,12 +32,84 @@
   margin: 6px 0;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.logo .social-link-logo {
+  width: 36px;
+  height: 36px;
+}
+
+.narrow-logo {
+  display: none;
+}
+
+.narrow-logo .narrow-logo-text {
+  font-size: 76px;
+  text-align: center;
+  border-bottom: 5px solid #00b2ca;
+  margin-bottom: 5px;
+}
+
+.narrow-logo .narrow-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.narrow-logo .narrow-links .social-link-logo {
+  margin: 5px;
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 512px) {
+  .container .not-ready {
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+  .narrow-logo {
+    display: block;
+  }
+}
+
+svg:nth-of-type(1) {
+  cursor: pointer;
+}
+
+svg:nth-of-type(1):hover {
+  fill: #f79256;
+}
+
 .container .links-list .link-item:nth-of-type(1) {
   border-left: 2px #f79256 solid;
 }
 
 .container .links-list .link-item:nth-of-type(1):hover {
   border-left-width: 8px;
+}
+
+svg:nth-of-type(2) {
+  cursor: pointer;
+}
+
+svg:nth-of-type(2):hover {
+  fill: #fbd1a2;
 }
 
 .container .links-list .link-item:nth-of-type(2) {
@@ -48,6 +120,14 @@
   border-left-width: 8px;
 }
 
+svg:nth-of-type(3) {
+  cursor: pointer;
+}
+
+svg:nth-of-type(3):hover {
+  fill: #1d4e89;
+}
+
 .container .links-list .link-item:nth-of-type(3) {
   border-left: 2px #1d4e89 solid;
 }
@@ -56,12 +136,28 @@
   border-left-width: 8px;
 }
 
+svg:nth-of-type(4) {
+  cursor: pointer;
+}
+
+svg:nth-of-type(4):hover {
+  fill: #7dcfb6;
+}
+
 .container .links-list .link-item:nth-of-type(4) {
   border-left: 2px #7dcfb6 solid;
 }
 
 .container .links-list .link-item:nth-of-type(4):hover {
   border-left-width: 8px;
+}
+
+svg:nth-of-type(5) {
+  cursor: pointer;
+}
+
+svg:nth-of-type(5):hover {
+  fill: #00b2ca;
 }
 
 .container .links-list .link-item:nth-of-type(5) {
