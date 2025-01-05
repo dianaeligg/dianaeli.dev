@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dianaeli.dev</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dianaeli.dev</title>
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="narrow-logo">
-      <div class="narrow-logo-text">dianaeli.dev</div>
-      <div class="narrow-links">
-        <a href="https://github.com/dianaeligg" target="_blank">
-          <img class="social-link-logo" src="./assets/github.svg" />
-        </a>
-        <a href="https://twitter.com/dianaeligg" target="_blank">
-          <img class="social-link-logo" src="./assets/twitter.svg" />
-        </a>
-        <a href="https://www.linkedin.com/in/diana-garcia/" target="_blank">
-          <img class="social-link-logo" src="./assets/linkedin.svg" />
-        </a>
+  <body>
+    <div class="container">
+      <!-- <div class="narrow-logo">
+        <div class="narrow-logo-text">dianaeli.dev</div>
+        <div class="narrow-links">
+          <a href="https://github.com/dianaeligg" target="_blank">
+            <img class="social-link-logo" src="./assets/github.svg" />
+          </a>
+          <a href="https://twitter.com/dianaeligg" target="_blank">
+            <img class="social-link-logo" src="./assets/twitter.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/diana-garcia/" target="_blank">
+            <img class="social-link-logo" src="./assets/linkedin.svg" />
+          </a>
+        </div>
+      </div> -->
+      <div class="not-ready">
+        <span class="logo-section">THIS</span>
+        <span class="logo-section">IS</span>
+        <span class="logo-section">WHERE</span>
+        <span class="logo-section">MY</span>
+        <span class="logo-section">WEBSITE</span>
+        <span class="logo-section">WOULD</span>
+        <span class="logo-section">BE</span>
+        <span class="logo-section">IF</span>
+        <span class="logo-section">IT</span>
+        <span class="logo-section">WAS</span>
+        <span class="logo-section">READY</span>
+      </div>
+      <div class="subtitle">in the meantime...</div>
+      <div class="links-list">
+        <div class="social-link-logo-container">
+          <a href="https://github.com/dianaeligg" target="_blank">
+            <img
+              class="social-link-logo"
+              src="./assets/github.svg"
+              onload="SVGInject(this)"
+            />
+          </a>
+        </div>
+        <div class="social-link-logo-container">
+          <a href="https://twitter.com/dianaeligg" target="_blank">
+            <img
+              class="social-link-logo"
+              src="./assets/twitter.svg"
+              onload="SVGInject(this)"
+            />
+          </a>
+        </div>
+        <div class="social-link-logo-container">
+          <a href="https://www.linkedin.com/in/diana-garcia/" target="_blank">
+            <img
+              class="social-link-logo"
+              src="./assets/linkedin.svg"
+              onload="SVGInject(this)"
+            />
+          </a>
+        </div>
       </div>
     </div>
-    <div class="not-ready">
-      <span class="logo-section">THIS</span>
-      <span class="logo-section">IS</span>
-      <span class="logo-section">WHERE</span>
-      <span class="logo-section">MY</span>
-      <span class="logo-section">WEBSITE</span>
-      <span class="logo-section">WOULD</span>
-      <span class="logo-section">BE</span>
-      <span class="logo-section">IF</span>
-      <span class="logo-section">IT</span>
-      <span class="logo-section">WAS</span>
-      <span class="logo-section">READY</span>
+    <div class="logo">
+      <div class="strikethrough">
+        <img class="skull" src="./assets/skull.svg" />dianaeli.dev
+      </div>
+      <a href="/">dianaeli.netlify.app</a>
     </div>
-    <div class="subtitle">
-      in the meanwhile...
-    </div>
-    <div class="links-list">
-      <a class="link-item" href="https://pepepepepepe.com" target="_blank"> pepepepepepe.com</a>
-      <a class="link-item" href="https://richchocolatygoodness.com" target="_blank"> Rich Chocolaty Goodness</a>
-      <a class="link-item" href="https://bcs-missing-videos.herokuapp.com/" target="_blank">BCS-HELPER</a>
-      <a class="link-item" href="https://simon-said.netlify.app/" target="_blank">Simon Said</a>
-    </div>
-  </div>
-  <div class="logo">
-    <a href="https://github.com/dianaeligg" target="_blank">
-      <img class="social-link-logo" src="./assets/github.svg" />
-    </a>
-    <a href="https://twitter.com/dianaeligg" target="_blank">
-      <img class="social-link-logo" src="./assets/twitter.svg" />
-    </a>
-    <a href="https://www.linkedin.com/in/diana-garcia/" target="_blank">
-      <img class="social-link-logo" src="./assets/linkedin.svg" />
-    </a>
-    <div>dianaeli.dev</div>
-  </div>
-  <script src="js/logocolors.js"></script>
-</body>
-
+    <script src="js/svg-inject.min.js"></script>
+    <script src="js/logocolors.js"></script>
+  </body>
 </html>

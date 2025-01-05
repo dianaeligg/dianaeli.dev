@@ -1,3 +1,5 @@
+@use "sass:list";
+
 $off-black: #141414;
 
 $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
@@ -16,23 +18,45 @@ $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
   }
   .links-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     .link-item {
       color: $off-black;
       padding-left: 12px;
-      transition: all 0.3s ease-in-out;
       margin: 6px 0;
+    }
+    .social-link-logo-container {
+      display: flex;
+      height: 200px;
+      width: 200px;
+      a {
+        transition: all 0.3s ease-in-out;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        .social-link-logo {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  .social-link-logo {
+.strikethrough {
+  text-decoration: line-through;
+  .skull {
     width: 36px;
     height: 36px;
+  }
+}
+
+.logo {
+  display: fixed;
+  flex-direction: column;
+  align-items: flex-end;
+  a {
+    color: black;
   }
 }
 
@@ -41,7 +65,7 @@ $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
   .narrow-logo-text {
     font-size: 76px;
     text-align: center;
-    border-bottom: 5px solid nth($background-colors, 5);
+    border-bottom: 5px solid list.nth($background-colors, 5);
     margin-bottom: 5px;
   }
   .narrow-links {
@@ -55,14 +79,11 @@ $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
   }
 }
 
-@media only screen and (max-width: 512px) {
+@media only screen and (max-width: 720px) {
   .container {
     .not-ready {
       text-align: center;
     }
-  }
-  .logo {
-    display: none;
   }
   .narrow-logo {
     display: block;
@@ -70,11 +91,13 @@ $background-colors: #f79256, #fbd1a2, #1d4e89, #7dcfb6, #00b2ca;
 }
 
 @each $color in $background-colors {
-  $i: index($background-colors, $color);
-  svg:nth-of-type(#{$i}) {
+  $i: list.index($background-colors, $color) - 2;
+  .social-link-logo-container:nth-of-type(#{$i}) a {
     cursor: pointer;
     &:hover {
       fill: $color;
+      height: 200px;
+      width: 200px;
     }
   }
   .container {
